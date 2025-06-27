@@ -2,8 +2,8 @@
 
 $localhost = "localhost";
 $username = "root";
-$password = "root";
-$dbname = "store";
+$password = "";
+$dbname = "inventery_management";
 
 // db connection
 $connect = new mysqli($localhost, $username, $password, $dbname);

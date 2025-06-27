@@ -27,7 +27,7 @@ if($_POST) {
 		$result = $connect->query($sql);
 
 		if($result->num_rows == 1) {
-			// $password = md5($password);
+			$password = md5($password);
 			// exists
 			$mainSql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
 			$mainResult = $connect->query($mainSql);
